@@ -40,14 +40,14 @@ pipeline
         {
             steps 
             {
-                
+             echo 'Building Docker image'   
             }
         }
         stage('Push Docker Image to Docker Hub') 
         {
             steps 
             {
-               
+               echo 'Pushing Docker Image'
             }
         }
     }
