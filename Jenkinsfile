@@ -23,11 +23,12 @@ pipeline
         {
             steps 
             {
-                withSonarQubeEnv('ZensarCodeAnalysis'){
+                withSonarQubeEnv('ZensarCodeAnalysis')
+                {
                     bat 'mvn sonar:sonar'
             }
         }
-        
+        }
         stage('JaCoCo Report') 
         {
             steps 
