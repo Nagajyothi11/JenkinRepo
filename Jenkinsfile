@@ -1,26 +1,33 @@
-pipeline {
+pipeline 
+{
     agent any
 
-    stages {
-        stage('Check Out') {
-            steps {
+    stages 
+    {
+        stage('Check Out')
+        {
+            steps
+            {
                 echo 'Checking out'
             }
         }
-    stages {
-        stage('Package') {
-            steps {
+    
+        stage('Package') 
+        {
+            steps
+            {
                 bat 'mvn clean package'
             }
         }
-        stages {
-        stage('JaCoCo Report') {
-            steps {
+        
+        stage('JaCoCo Report') 
+        {
+            steps 
+            {
                 jacoco()
             }
         }
         
     }
+    }  
     
-    
-}
