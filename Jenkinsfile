@@ -16,7 +16,8 @@ pipeline
         {
             steps
             {
-                bat 'mvn clean package'
+                bat 'mvn clean package'  // This is for Windows
+                //sh 'mvn clean package' this is for Linux and 
             }
         }
         stage('sonar Analysis') 
