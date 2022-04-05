@@ -40,7 +40,7 @@ pipeline
         {
             steps 
             {
-             echo 'Building Docker image'   
+             bat 'docker build -t jyothi2022/test .' 
             }
         }
         stage('Push Docker Image to Docker Hub') 
