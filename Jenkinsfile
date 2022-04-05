@@ -47,7 +47,8 @@ pipeline
         {
             steps 
             {
-               echo 'Pushing Docker Image'
+                bat 'docker login -u username -p password'
+               bat 'docker push jyothi2022/test'
             }
         }
     }
